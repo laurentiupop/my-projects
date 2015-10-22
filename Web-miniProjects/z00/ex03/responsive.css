@@ -1,0 +1,49 @@
+
+td, .mare {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+.mic {
+    font-size: 0.3em;
+}
+
+@media screen and (max-width: 520px) {
+
+   td, .mare { font-size: 0.3em;
+   font-weight: bold; }
+   .mic { font-size: 0.01em; }
+}
+
+
+@media screen and (max-width: 780px) {
+    
+        table tr,
+    table th,
+    table td {
+        display: block;
+        padding: 0;
+       
+        
+    }    table tr {
+       
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }    table th[data-title]:before
+    table td[data-title]:before {
+       font-size: 0.3em;
+                
+    }    table td {
+        border: none;
+        margin-bottom: 6px;
+        color: #444;
+    }  table td:empty {font-size: 0.3em;
+        display: none; 
+    }  
+      table td:first-child {
+        
+        
+        margin-bottom: 6px;
+        color: #333;
+    }
+}

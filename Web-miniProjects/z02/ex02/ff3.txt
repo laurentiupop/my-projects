@@ -1,0 +1,2 @@
+
+Parse error: parse error in /Volumes/Data/nfs/zfs-student-6/users/2014/flpop/PiscinaWeb/j02/ex02/loupe.php on line 26

@@ -1,0 +1,99 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: flpop <marvin@42.fr>                       +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2015/03/16 19:18:37 by flpop             #+#    #+#            -->
+<!-- Updated: 2015/03/16 19:24:33 by flpop            ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<HTML>
+	<HEAD>
+		<TITLE>Doft</TITLE>
+		<link rel="StyleSheet" type="text/css" href="doft.css" />
+		<BODY >
+		<BR>
+		
+		<div class="block" >
+		<a href="http://www.disney.com">
+		<img src="resources/reload.png" height="20" width="20"  style="margin-left:1267px; padding-top: 10px; " title="Incepeti din nou;" >
+			<img src="resources/day_of_the_42.png" height="115" width="400" style="margin-top:-23px"></a>
+			<a href="http://www.relaischateaux.com">
+			<img src="resources/close.gif" height="20" width="20" align="right" style="margin-top:75px; margin-right:10px;"></a>
+			<img src="resources/loupe.png" height="145" align="right" style="margin-top:-25px">
+		</div>
+		
+		<div class="main">
+				<div class="left">
+			<img src="resources/arrow.png" height="65" width="65" style="margin-left:30px;margin-top:15px;" alt="Inainte">
+			<img src="resources/main.png" height="65" width="65" style="margin-left:30px; margin-top:5px; padding-right :0px;" alt="Luati">
+			<a href="da.html">
+			<img src="resources/oeil.png"  style="height:65px; width:65px;margin-left:30px; border:5px solid red; border-radius:4px; margin-top:5px;" alt="Priviti" ></a>
+
+			<img src="resources/outil.png" height="65" width="65" style="margin-left:30px; margin-top:5px;" alt="Utilizati">
+			<img src="resources/chat-icon.png" height="65" width="65" style="margin-left:30px; margin-top:5px;" alt="Vorbiti" onClick="javascript:popUp('chat.html')">
+		</div>
+		<div class="right">
+		<img src="resources/book.png" height="100" width="70" style=" margin-top:12px; margin-left:30px;">
+		<img src="resources/towel.png" height="50" width="65" style=" margin-top:12px; margin-left:30px;">
+		<div class="caramida">
+		
+		</div>
+		
+		</div><a href="http://www.ikea.com">
+<script>
+	function del()
+	{
+		document.getElementById('clickme').style.display = 'none';
+		
+	}
+</script>
+<script> 
+
+function changeImage()
+{
+var img = document.getElementById("image");
+img.src="resources/1.jpg";
+del();
+return false;
+}
+
+</script>
+
+</head>
+<body>
+<img id="image" src="resources/cluster.jpg" height="500" width="880" style="padding:10px;z-index:5;position:absolute" />
+<br><br><br>
+
+
+
+			</a>
+		</div>
+		<div class="coment">
+		<span style="font-family:verdana,sans-serif;margin-left:12px;">
+		Vous <span style="font-size:35;font-family:'times new roman';">entrez</span> alors dans une grande piece remplie<br> &nbsp;&nbsp;d'<span style="text-shadow:5px 6px 6px red;">ordinateurs...</span> <br><i>&nbsp;&nbsp;- Bonjour, vous &ecirc;tes nouveau ici ?</i></span><br>
+		<input type="text" size="70" style="border:2px inset; margin-left:15px;margin-top:5px;"><input type="submit" value="Repondre" style="margin-left:10px;" >
+		</div><button id="clickme" onclick="changeImage();">Click for second map!</button>
+
+		<a href="http://www.apple.com.">
+		<span style=" width: 100% ; height:100%; position:absolute; z-index:2;"></span></a>
+		
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=500,left = 710,top = 290');");
+}
+</script>
+
+		</BODY>
+	</HEAD>
+</HTML>

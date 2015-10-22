@@ -1,0 +1,2 @@
+USE db_flpop;
+DELETE FROM ft_table WHERE id < 6;

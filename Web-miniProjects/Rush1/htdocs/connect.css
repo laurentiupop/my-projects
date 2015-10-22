@@ -1,0 +1,71 @@
+.connect{
+    position: absolute;
+    top :30px;
+    right: 20px;
+    width: 220px;
+    
+}
+    .connect label{
+        font-size: 16px;
+    }
+    .connect input[type=submit]{
+        position: absolute;
+        right: 2px;
+        top: 55px;
+    }
+    header input[type=submit]{
+        background-color: black;
+        color: white;
+        font-size: 40;
+        width: 30px;
+        height: 15px;
+        border: none;
+        border-radius: 1px;
+        margin: 0;
+        padding: 0;
+    }
+   header input:not([type=submit]){
+        float: right;
+        border-radius: 5px;
+
+    }
+    .connect div, #account div{
+        margin: 5px 0px 5px 0px;
+        
+    }
+    .connect a{
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+#account{
+    margin: 100px auto;
+    width: 300px;    
+}
+
+#users_view, #products_view{
+    height: 200px;
+    
+    margin: 10px;
+    border: 3px solid ;
+    border-radius: 5px;
+}
+
+.userline, .prodline{
+    
+    margin: 5px;
+    line-height: 0px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+    .userline h4, .prodline h4{
+        display: inline-block;
+        margin: 13px 0px 0px 10px;
+    }
+    .userline input, .prodline input{
+        float: right;
+        margin-right: 10px;
+        margin-top: 2px;
+        width: 20px;
+    }

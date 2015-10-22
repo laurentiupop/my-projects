@@ -1,0 +1,339 @@
+#preload {
+	background-color: white;
+}
+
+body {
+	font-family: arial;
+	background: url("http://www.dailypicsupdate.com/wp-content/uploads/2013/01/Nice-Music-sound-vector-pics.jpg");
+}
+
+#main {
+	position: relative;
+	margin: auto;
+	width: 1220px;
+	height: 1330px;
+	overflow: show;
+	z-index: 2;
+}
+
+ nav, aside {
+	border-radius:10px;
+box-shadow: 10px 10px 5px #888888;
+
+	
+}
+
+img {
+	border-radius:10px;
+}
+header {
+	position: absolute;
+	border-radius: -10px;
+	background:url("http://www.pageresource.com/wallpapers/wallpaper/new-art-funny-jokes-white-abstract-full_404304.jpg");
+	top: 0px;
+	left: 0px;
+	height: 120px;
+	width: 100%;
+}
+header h1 a, header h1 a:active, header h1 a:hover {
+	margin: 20px;
+	color: rgb(48,61,77);
+	font-family: verdana;
+	font-weight:bolder;
+	text-decoration:none;
+	font-size: 2em;
+}
+
+nav {
+	position: absolute;
+	display: table-cell;
+	top: 120px;
+	height: 30px;
+	border: solid #000000;
+	border-width: 1px 1px 1px 1px;
+	width: 100%;
+	color: Black;
+	padding-left:5px;
+	background:url("http://static.desktopnexus.com/thumbnails/44014-bigthumbnail.jpg");
+}
+nav a, nav a:visited, nav a:hover, #label_category{
+	vertical-align:middle;
+	color: white;
+	text-decoration: none;
+	color: #D58490;
+
+	font-size: 1.3em;
+	margin:6%;
+}
+nav a:hover {
+	color:rgb(240, 240, 240);
+	
+}
+section {
+	position: absolute;
+	top: 140px;
+	left: 0px;
+	height: 980px;
+	width: 95%;
+	padding:5px;
+}
+
+section.store {
+	overflow-y: scroll;
+	top: 180px;
+	width: 680px;
+	height: 920px;
+}
+
+section #main_img {
+	border-radius:2px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	width: 850px;
+	height: 350px;
+	overflow: hidden;
+}
+section #pitch {
+
+	position: absolute;
+	text-align: center;
+	
+	top: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	right: -10px;
+
+}
+section #showcase {
+	position: absolute;
+	top: 400px;
+	left: 10px;
+	width: 990px;
+	height: 500px;
+}
+
+	.item {
+	border-radius:10px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 13px;
+	width: 300px;
+	height: 160px;
+	box-shadow: 1px 1px 3px grey;
+}
+	.item .img
+	{
+		position: absolute;
+		top:20px;
+		left:0px;
+		margin-right: 5px;
+		border-radius:10px;
+	}
+	.item .text
+	{
+		position: absolute;
+		top: -20px;
+		left: 130px;
+	}
+
+	.price {
+		margin-right: 5px;
+		text-align: right;
+		font-size: 1.1em;
+	}
+	.product .price {
+		position:absolute;
+		top: 100px;
+		right: 250px;
+		font-size: 3em;
+		font-weight: bolder;
+		color:rgba(104,104, 200, 1);
+	}
+	.product .available {
+		position:absolute;
+		top: 200px;
+		right : 250px;
+		background: red;
+		border-radius: 10px;
+		color: white;
+		margin:10px;
+		padding:5px;
+	}
+	.product .outofstock {
+		position:absolute;
+		top: 200px;
+		right : 250px;
+		background: red;
+		color: white;
+		margin:10px;
+		padding:5px;
+	}
+	.product img {
+		border-radius:10px;
+		margin: 100px;
+		width: 300px;
+		height: 300px;
+
+	}
+	.item a:link, .item a:hover, .item a:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	.product {
+		position: relative;
+		left:10px;
+		top:100px;
+		width: 300px;
+		height: 300px;
+	}
+	.content {
+		font-size:1.2em;
+		width: 400px;
+		text-align:justify;
+	}
+	#howmany {
+		position:absolute;
+		top:550px;
+		left:0px;
+		font-size:1.2em;
+		margin-left: 525px;
+		margin-top: -265px;
+	}
+	#addcart {
+		position: absolute;
+		top: 350px;
+		right: 260px;
+		color:white;
+		margin-left: 500px;
+		background:black;
+		width:150px;
+		height:40px;
+		border: none;
+		z-index: 1;
+		font-size:1.5em;
+		border-radius: 10px;
+		box-shadow:1px 1px 3px black;
+	}
+
+aside {
+	position: absolute;
+	overflow-y:auto;
+	overflow-x:hidden;
+	top:200px;
+	left:700px;
+	width:300px;
+	height:700px;
+	border: 3px solid Black;
+	background: white;
+	color: Black;
+	z-index:10;
+	padding:10px;
+	-webkit-user-select: none;
+}
+	aside a:link, aside a:hover, aside a:visited {
+		position:relative;
+		left:50px;
+		display: table-cell;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		background: Black;
+		width:200px;
+		height:30px;
+		vertical-align:middle;
+		border-radius:25px;
+	}
+	aside a:hover {
+		text-decoration: underline;
+	}
+	aside img, aside h4
+	{
+		display: inline-block;
+	}
+	.bsk_name {
+		color: black;
+	}
+	.bsk_less {
+		background:no-repeat url("http://www.upfrontsystems.co.za/Members/roche/cnx-mockups/collection_editor/helper_files/minus.gif");
+		width:20px;
+		margin:5px;
+		cursor:pointer;
+	}
+	.bsk_more {
+		background:no-repeat url("http://shop.cameraelectronic.com.au/Images/Menu/plus.png");
+		width:20px;
+		margin:5px;
+		cursor:pointer;
+	}
+	.bsk_quantity {
+		position:relative;
+		top:-3px;
+	}
+	.bsk_price {
+		margin-left:15px;
+		color: Black;
+		font-weight:bolder;
+	}
+	#total, #amount {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bolder;
+		margin-bottom: 10px;
+	}
+	.checkoutline {
+		margin-left: 30px;
+		font-size: 1.2em;
+		color: black;
+	}
+	.checkoutline span {
+		font-weight: bold;
+		font-size: 1.5em;
+		color: Black;
+	}
+	#checkoutbutton
+	{
+		position: relative;
+		left:310px;
+		width:350px;
+		height:50px;
+		border:none;
+		color:white;
+		background: Black;
+		font-size:2em;
+		border-radius:25px;
+	}
+
+
+
+#err_log {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	z-index:200;
+}
+#err_log div {
+	position: relative;
+	margin:auto;
+	top:45%;
+	background:white;
+	width:80%;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border-radius:25px;
+	color:black;
+	font-size:2em;
+	text-align:center;
+}
+#err_log img {
+	position:absolute;
+	top:10px;
+	right:10px;
+}

@@ -1,0 +1,43 @@
+<html><body>
+</body></html>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Musicshop</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id = "main">
+	<header>
+		<?php include("header.php"); ?>
+        <?php include("login.php"); ?>
+	</header>
+	<nav>
+		<a href="store.php">Visit our store</a>
+		
+	</nav>
+	<section>
+
+<?php
+foreach ($showcase as $key)
+{
+	echo "<div class = \"item\">
+		<a href=\"product.php?ID=".$result[$key]['ID']."\" alt=\"check_result[$key]\">
+		<div class = \"img\">
+			<img src=\"".$result[$key]['img']."\" alt=\"".$result[$key]['name']."\" />
+		</div>
+		<div class = \"text\">
+			<h4 class = \"price\">".$result[$key]['price']." €</h4>
+			<h5 class =\"title\">".$result[$key]['name']." <span>(".$result[$key]['category'].")</span></h5>
+			<p class = \"pitch\">".$result[$key]['pitch']."</p><br/>
+		</div>
+		</a>
+		</div>";
+}
+?>
+	</div>
+	</section>
+</div>
+</body>
+</html>

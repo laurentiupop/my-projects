@@ -1,0 +1,7 @@
+Credentials cache: API:11429
+        Principal: flpop@42.FR
+
+  Issued                Expires               Principal
+Sep  2 12:56:29 2014  Sep  2 22:56:29 2014  krbtgt/42.FR@42.FR
+Sep  2 12:56:34 2014  Sep  2 22:56:29 2014  nfs/zfs-student-6.cluj.42.fr@42.FR
+Sep  2 13:58:01 2014  Sep  2 22:56:29 2014  host/vogsphere-frontend-normal-1.42.fr@42.FR

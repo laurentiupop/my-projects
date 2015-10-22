@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div class="fb" style="margin:100;">
+	<div class="fb-head">
+		<span class="fb-online"></span> 
+		<a>42 Game</a> 
+		<a class="fb-close"></a>
+	</div>
+	<div class="fb-content"id="chat">
+		<ul id="chatMessages">
+			<li><img src="http://www.femoticons.net/images/posts/silly_facebook_emoticon.png"/><span>Hello Friends</span></li>
+			<li><img src="http://www.geckorecruitment.com/wp-content/uploads/2013/10/smiley_face.jpg"/><span>This is a chat room</span></li>
+		</ul>
+	</div>
+	<div class="fb-footer">
+		<input class="fb-chat-box "type="text" id="chatData"placeholder="Write your message here..."> 
+		<div class="fb-sticker"></div> 
+	</div> 
+</div>
+<style>
+	.fb {
+	border: solid 1px #ADADAD;
+	height: 285px;
+	width: 260px;
+	background-color: #fff;
+	}
+
+	.fb-head {
+		background-color: #4d68a2;
+		height: 20px;
+		color: #fff;
+		padding: 4px 0px;
+		font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 19px;
+	}
+
+	.fb-head a {
+		color: #fff;
+	}
+
+	.fb-content {
+		background-color: #FFFFFF;
+		height: 231px;
+		overflow: auto;
+	}
+
+	.fb-footer {
+		border: 0;
+		border-top: solid 1px #ADADAD;
+		height: 25px;
+	}
+
+	.fb-online {
+		background-color: rgb(0, 179, 0);
+		width: 10px;
+		height: 10px;
+		margin: 5px 7px;
+		float: left;
+		border-radius: 5px;
+	}
+
+	.fb-close {
+		
+		width: 87px;
+		height: 18px;
+		float: right;
+		margin-right: 7px;
+	}
+
+	.fb-sticker {
+		
+		width: 50px;
+		height: 17px;
+		float: right;
+		margin: 4px 2px;
+	}
+
+	.fb-chat-box {
+		width: 200px;
+		height: 25px;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding-left: 5px;
+		float: left;
+	}
+
+	#chat ul li {
+		clear: both;
+		padding: 4px;
+		margin: 10px 0px 5px 0px;
+		overflow: auto;
+	}
+
+	#chat li img {
+		border: solid 1px #ddd;
+		width: 35px;
+		float: left;
+	}
+
+	#chatMessages li span {
+		width: 190px;
+		float: left;
+		margin-left: 5px;
+		word-wrap: break-word;
+	}
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+<script>
+	$(function () {
+		$("#chatData").focus();
+		$('<audio id="chatAudio"><source src="/files/theme/fb-notify-3.ogg " type="audio/ogg"><source src="/files/theme/fb-notify-1.mp3" type="audio/mpeg"><source src="/files/theme/fb-notify-2.wav" type="audio/wav"></audio>').appendTo('body');
+
+
+		$("#chatData").keydown(function (e){
+			if(e.keyCode == 13){
+				var a = $("#chatData").val().trim();
+				if (a.length > 0) {
+					$("#chatData").val('');
+					$("#chatData").focus();
+					$("<li></li>").html('<img src="http://vignette2.wikia.nocookie.net/rambo/images/5/54/286110-bb76e248-4681-11e3-b366-b430cfe3cfdd.jpg/revision/latest?cb=20140326143835"/><span>' + a + '</span>').appendTo("#chatMessages");
+					$("#chat").animate({
+						"scrollTop": $('#chat')[0].scrollHeight
+					}, "slow");
+					$('#chatAudio')[0].play();
+				}
+			}
+		});
+	});
+
+</script>
+<br>
+<a href="doft.html" style="margin-left:100;margin-top: -50px;"><img src="http://uxrepo.com/static/icon-sets/font-awesome/svg/home.svg" height="50" width="50" style="margin-left:100;margin-top: -50px;"></a>
+</body>
+</html>
